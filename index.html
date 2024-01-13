@@ -7,7 +7,7 @@
     <title>The HTML Magazine</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The HTML Magazine</h1>
       <nav>
         <a href="blog.html">Blog</a>
@@ -16,20 +16,21 @@
         <a href="#">Challenges</a>
       </nav>
 
-      <p>
+      <p id="author">
         Posted by <strong> Adeyemi Muaz</strong> on Monday, January 09th 2024
       </p>
-
-      <img
-        src="images/html-structure.png"
-        alt="HTML Structure image"
-        width="512"
-        height="294"
-      />
     </header>
 
     <main>
-      <h2>Understanding the Core of Web Development: HTML</h2>
+      <header>
+        <h2>Understanding the Core of Web Development: HTML</h2>
+        <img
+          src="images/html-structure.png"
+          alt="HTML Structure image"
+          width="512"
+          height="294"
+        />
+      </header>
       <p>
         The backbone of all modern websites and web applications lies in three
         core technologies: HTML, CSS, and JavaScript. These form the
@@ -92,7 +93,7 @@
 
       <aside>
         <h4>Related Posts</h4>
-        <ul>
+        <ul class="related">
           <li>
             <img
               src="images/web dev-1.png"
@@ -101,7 +102,7 @@
               height="300"
             />
             <a href="#">How to learn web development</a>
-            <p>By Brian Scholes</p>
+            <p class="related-author">By Brian Scholes</p>
           </li>
           <li>
             <img
@@ -111,7 +112,7 @@
               height="300"
             />
             <a href="#">The Unknown powers of CSS</a>
-            <p>By Adams Smith</p>
+            <p class="related-author">By Adams Smith</p>
           </li>
           <li>
             <img
@@ -121,14 +122,14 @@
               height="300"
             />
             <a href="#">Why JavaScript is Awesome</a>
-            <p>By Walter Keith</p>
+            <p class="related-author">By Walter Keith</p>
           </li>
         </ul>
       </aside>
     </main>
 
     <footer>
-      <p>Copyright &copy; 2027 by The HTML Magazine</p>
+      <p id="copyright">Copyright &copy; 2027 by The HTML Magazine</p>
     </footer>
   </body>
 </html>
