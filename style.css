@@ -36,6 +36,10 @@ nav {
   margin-bottom: 10px;
 }
 
+main {
+  position: relative;
+}
+
 nav a:link {
   display: inline-block;
   margin: 7px 20px;
@@ -111,11 +115,21 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   margin-bottom: 40px;
-  width: 50%;
+  width: 70%;
 }
 
 .related li:first-child a {
   font-weight: bold;
+}
+
+.like-btn {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
 }
 
 footer {
