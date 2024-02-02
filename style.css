@@ -119,7 +119,6 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   margin-bottom: 40px;
-  width: 70%;
 }
 
 .related li:first-child a {
@@ -219,7 +218,18 @@ nav a:link {
   font-size: 14px;
 }
 
-main {
+.related {
+  margin-left: 0;
+}
+
+.related-li img {
+  height: auto;
+  width: 100px;
+  margin-left: 20px;
+}
+
+/* FLEX */
+/* main {
   display: flex;
   gap: 75px;
 }
@@ -241,4 +251,17 @@ aside {
   height: auto;
   width: 100px;
   margin-left: 20px;
+} */
+
+/* GRID */
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 50px;
+}
+
+aside {
+  grid-column: 2 / 3;
+  align-self: start;
 }
